@@ -1,0 +1,77 @@
+.article-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding-left: 1rem;
+}
+
+.article-card {
+    width: calc(25% - 1.25rem);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+    transition: transform 0.2s;
+    height: 29rem;
+}
+.article-card:hover {
+    transform: translateY(-0.3125rem);
+}
+
+.article-image-container {
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 52%;
+    position: relative;
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    max-height: 10rem;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.article-summary {
+    height: 6.5rem;
+    font-size: 0.875rem;
+    color: #555;
+    overflow: hidden;
+}
+
+.article-date {
+    color: #888;
+    font-size: 0.875rem;
+}
+
+.article-title {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+.read-more-button {
+    font-size: 0.875rem;
+    color: #007bff;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    margin-top: auto; 
+    margin-left: 0.5rem; 
+    cursor: pointer;
+    text-align: left;
+    align-self: flex-start; 
+}
+
+.read-more-button:hover {
+    text-decoration: underline;
+}
+.highlight {
+    background-color: yellow !important;
+    font-weight: bold !important;
+  }

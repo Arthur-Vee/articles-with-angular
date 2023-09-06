@@ -1,0 +1,14 @@
+<app-article-filter (filteredTextChange)="onFilterChange($event)"></app-article-filter>
+<div class="article-list">
+  <mat-card *ngFor="let article of articles | highlightFilter: filteredText" class="article-card">
+    <div class="article-image-container">
+      <img [src]="article.image_url" class="article-image">
+    </div>
+    <mat-card-content>
+      <p class="article-date">{{ article.published_at | date }}</p>
+      <mat-card-title [innerHTML]="article.title"></mat-card-title>
+      <p class="article-summary" [innerHTML]="article.summary"></p>
+    </mat-card-content>
+    <button mat-button class="read-more-button" [routerLink]="['/articles', article.id]">Read More →</button>
+  </mat-card>
+</div>

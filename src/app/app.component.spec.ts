@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'articles-with-angular2'`, () => {
+  it(`should have as title 'codebridge-test'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('articles-with-angular2');
+    expect(app.title).toEqual('codebridge-test');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('articles-with-angular2 app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('codebridge-test app is running!');
   });
 });

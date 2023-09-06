@@ -1,0 +1,50 @@
+.image-header {
+    width: 100%;
+    height: 20rem; /* 20% of the initial containing block height */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-header img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Stretch the image to cover the container */
+  }
+  
+  .article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    margin: -4rem auto 0;
+    border-radius: 0.8rem; /* Adjust as needed */
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1); /* Adjust shadow values */
+  }
+  .article-card{
+    position: relative;
+    bottom: 2rem;
+    justify-content: center;
+    max-width: 70%;
+    align-items: center;
+  }
+  
+  .back-button {
+    position:relative;
+    bottom:-2.5rem;
+    font-size: 0.875rem;
+    color: #007bff; /* Blue color */
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    align-self: flex-start; /* Align the button to the left */
+  }
+  
+  
+  .back-button:hover {
+    text-decoration: underline;
+  }
+  
